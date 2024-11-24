@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/res.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Maternity Pregnancy Photographer LONDON</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <section class="container">
+        <header class="header">
+          <div class="container framework">
+            <div class="header__body">
+              <a class="header__logo" href="#"
+                ><img class="baw" src="./src/img/logo/logo3.png" alt="logo"
+              /></a>
+            </div>
+            <div class="header__burger">
+              <span></span>
+            </div>
+            <nav class="header__menu">
+              <ul class="header__list">
+                <li>
+                  <a href="./index.html" class="header__link">About me</a>
+                </li>
+                <li>
+                  <a href="#" class="header__link">Free wardrobe</a>
+                </li>
+                <li>
+                  <a href="./gallery.html" class="header__link">Gallery</a>
+                </li>
+                <li>
+                  <a href="#" class="header__link">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+
+            <!--<div class="header__social">
+              <a class="header__btn btn btn--red">Book Now</a>-->
+            <div class="header__social" id="fake-masonry">
+              <a class="header__icon" href="#"
+                ><img src="./src/img/facebook.png" alt="facebook"
+              /></a>
+              <a class="header__icon" href="#"
+                ><img src="./src/img/instagram.png" alt="instagram"
+              /></a>
+            </div>
+          </div>
+        </header>
+        <main>
+          <div class="cover">
+            <div class="content">
+              <div class="container content__text">
+                <h1>VERO-NIKA</h1>
+                <div class="fake-masonry">
+                  <img
+                    class="content__slider"
+                    src="./src/img/foto-slider/IMG_1227.jpeg"
+                    alt="foto"
+                  />
+                  <img
+                    class="content__slider"
+                    src="./src/img/foto-slider/IMG_1530.jpeg"
+                    alt="foto"
+                  />
+                  <img
+                    class="content__slider"
+                    src="./src/img/foto-slider/IMG_1878.jpeg"
+                    alt="foto"
+                  />
+                  <img
+                    class="content__slider"
+                    src="./src/img/foto-slider/IMG_3510.jpeg"
+                    alt="foto"
+                  />
+                  <img
+                    class="content__slider"
+                    src="./src/img/foto-slider/IMG_4820.jpeg"
+                    alt="foto"
+                  />
+                  <img
+                    class="content__slider"
+                    src="./src/img/foto-slider/IMG_5402.jpeg"
+                    alt="foto"
+                  />
+                  <img
+                    class="content__slider"
+                    src="./src/img/foto-slider/IMG_6168.jpeg"
+                    alt="foto"
+                  />
+                  <img
+                    class="content__slider"
+                    src="./src/img/foto-slider/IMG_1227.jpeg"
+                    alt="foto"
+                  />
+                  <img
+                    class="content__slider"
+                    src="./src/img/foto-slider/IMG_1530.jpeg"
+                    alt="foto"
+                  />
+                  <img
+                    class="content__slider"
+                    src="./src/img/foto-slider/IMG_1878.jpeg"
+                    alt="foto"
+                  />
+                  <img
+                    class="content__slider"
+                    src="./src/img/foto-slider/IMG_3510.jpeg"
+                    alt="foto"
+                  />
+                  <img
+                    class="content__slider"
+                    src="./src/img/foto-slider/IMG_4820.jpeg"
+                    alt="foto"
+                  />
+                  <img
+                    class="content__slider"
+                    src="./src/img/foto-slider/IMG_5402.jpeg"
+                    alt="foto"
+                  />
+                  <img
+                    class="content__slider"
+                    src="./src/img/foto-slider/IMG_6168.jpeg"
+                    alt="foto"
+                  />
+                  <img
+                    class="content__slider"
+                    src="./src/img/foto-slider/IMG_1227.jpeg"
+                    alt="foto"
+                  />
+                  <img
+                    class="content__slider"
+                    src="./src/img/foto-slider/IMG_1530.jpeg"
+                    alt="foto"
+                  />
+                  <img
+                    class="content__slider"
+                    src="./src/img/foto-slider/IMG_1878.jpeg"
+                    alt="foto"
+                  />
+                  <img
+                    class="content__slider"
+                    src="./src/img/foto-slider/IMG_3510.jpeg"
+                    alt="foto"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+        <footer>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia id
+            reiciendis aliquid, atque ipsum odio corporis iure enim eveniet
+            voluptatum, nesciunt totam, adipisci labore ad beatae omnis
+            praesentium. Aliquam, eaque.
+          </p>
+        </footer>
+      </section>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./src/js/script.js"></script>
+    <script>
+      // Находим все элементы с классом 'baw'
+      const imgElements = document.querySelectorAll(".baw");
+
+      // Добавляем обработчики событий для каждого изображения
+      imgElements.forEach(function (imgElement) {
+        imgElement.addEventListener("mouseenter", function () {
+          imgElement.src = "./src/img/logo/logo2.png"; // Меняем изображение при наведении
+        });
+
+        imgElement.addEventListener("mouseleave", function () {
+          imgElement.src = "./src/img/logo/logo3.png"; // Возвращаем исходное изображение при уходе с наведения
+        });
+      });
+    </script>
+  </body>
+</html>

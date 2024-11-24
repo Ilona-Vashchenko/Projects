@@ -1,0 +1,10 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="X-UA-Compatible" content="ie=edge"><title>Simple gulp project</title><link rel="stylesheet" href="./main.css"><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"></head><body><img class="img-click" src="./assets/gulp-logo.svg" alt=""><h1>Simple gulp project</h1><div class="slider"><div class="slider-item"><img src="./assets/slick1.jpg" alt="monkey1"></div><div class="slider-item"><img src="./assets/slick2.jpg" alt="monkey2"></div><div class="slider-item"><img src="./assets/slick3.jpg" alt="monkey3"></div><div class="slider-item"><img src="./assets/slick4.jpg" alt="monkey4"></div><div class="slider-item"><img src="./assets/slick5.jpg" alt="monkey5"></div><div class="slider-item"><img src="./assets/slick6.jpg" alt="squirrel"></div></div><script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script><script src="./main.bundle.js"></script><script>$(".img-click").on("click", function () {
+        $(this).toggleClass("active");
+        //$(this).addClass("right");
+        //$(this).removeClass("active");
+      });
+      $(".slider").slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      });</script></body></html>

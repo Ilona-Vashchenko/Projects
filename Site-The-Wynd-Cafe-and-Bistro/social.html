@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/res.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
+    rel="stylesheet"
+  />
+  <title>@@The Wynd Cafe and Bistro</title>
+</head>
+
+  <body>
+    <div class="wrapper">
+      <header>
+  <div class="container">
+    <div class="container__backgraund">
+      <div class="container__opacity post1">
+        <div class="container__content">
+          <h2>Post Title 1</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+            pariatur iste rem sequi error consequatur.
+          </p>
+        </div>
+      </div>
+      <div class="container__opacity post2">
+        <div class="container__content">
+          <h2>Post Title 2</h2>
+          <p>
+            Totam illum voluptate consectetur atque odit expedita officia
+            consequuntur ipsam provident, corporis cupiditate. Voluptas,
+            explicabo.
+          </p>
+        </div>
+      </div>
+      <div class="container__opacity post3">
+        <div class="container__content">
+          <h2>Post Title 3</h2>
+          <p>
+            Sed ratione repellat voluptatem hic quibusdam, magni exercitationem
+            laudantium totam nihil harum aspernatur in amet?
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="header">
+      <div class="header__framework">
+        <div id="space" class="header__body">
+          <div class="header__burger">
+            <span></span>
+          </div>
+          <nav class="header__menu">
+            <ul class="header__list">
+              <li>
+                <a class="header__link" href="index.html">HOME</a>
+              </li>
+              <li>
+                <a class="header__link" href="menu.html">MENU</a>
+              </li>
+              <li>
+                <a class="header__link" href="gallery.html">GALLERY</a>
+              </li>
+              <li>
+                <a class="header__link" href="social.html">SOCIAL</a>
+              </li>
+              <li>
+                <a class="header__link" href="contacts.html">CONTACT</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="booking">
+            <div class="booking__opacity">
+              <a class="booking__link" href="booking.html">BOOK A TABLE </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <main class="couresel-3d">
+        <div class="shell">
+          <div class="couresel__case">
+            <div class="couresel__inner">
+              <div class="social">
+                <ul class="social__link">
+                  <li>
+                    <a
+                      href="https://www.tripadvisor.co.uk/Restaurant_Review-g190728-d26803232-Reviews-The_Wynd_Cafe_Bistro-Darlington_County_Durham_England.html"
+                      ><img src="img/social/logo/Tripadvisor1.png"
+                    /></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.facebook.com/people/The-Wynd-cafe-Bistro/100093782220582/"
+                      ><img src="img/social/logo/Facebook.png"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="img/social/logo/Instagram.png" /></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.just-eat.co.uk/restaurants-the-wynd-cafe-and-bistro-archdeacon-newton-dl3/menu?utm_source=tripadvisor&utm_medium=cps&utm_campaign=CM_P_TA_GBR_UK_%5BENGM%5D_%5BOTHR%5D_%5BTRIPADVISOR%5D_PERFDIS_JE%3AUK%3A211076"
+                    >
+                      <img src="img/social/logo/jut_eat.png" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://g.co/kgs/YXnNTyY"
+                      ><img src="img/social/logo/google.png"
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div id="drag-shell">
+              <div id="spin-shell">
+                <img class="spin-img" src="./img/social/reviews/1.jpg" alt="" />
+                <img class="spin-img" src="./img/social/reviews/2.jpg" alt="" />
+                <img class="spin-img" src="./img/social/reviews/3.jpg" alt="" />
+                <img class="spin-img" src="./img/social/reviews/4.jpg" alt="" />
+                <img class="spin-img" src="./img/social/reviews/5.jpg" alt="" />
+                <img class="spin-img" src="./img/social/reviews/6.jpg" alt="" />
+                <p class="spin-text">Reviews about our cafe & bistro</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer></footer>
+      <!--<script src="./js/social.js"></script>-->
+      <script>
+        var transformStatus = 'true';
+        var radius = 240;
+        var autoRotate = true;
+        var rotateSpeed = -60;
+        var imgWidth = 250;
+        var imgHeight = 300;
+
+        setTimeout(init, 1000);
+
+        var odrag = document.getElementById("drag-shell");
+        var ospin = document.getElementById("spin-shell");
+        var aImg = ospin.getElementsByTagName("img");
+        var aVid = ospin.getElementsByTagName("video");
+        var aEle = [...aImg, ...aVid];
+
+        ospin.style.width = imgWidth + "px";
+        ospin.style.height = imgHeight + "px";
+
+        function init(delayTime) { 
+    for (var i = 0; i < aEle.length; i++) { 
+      aEle[i].style.transform = 
+        "rotateY(" + 
+        i * (360 / aEle.length) + 
+        "deg) translateZ(" + 
+        radius + 
+        "px)"; 
+      aEle[i].style.transition = "transform 1s"; 
+      aEle[i].style.transitionDelay = 
+        delayTime || (aEle.length - i) / 4 + "s"; 
+    } 
+  } 
+ 
+  function applyTransform(obj, status) { 
+   if (status != 'false') { 
+    if (tY > 180) tY = 180; 
+    if (tY < 0) tY = 0; 
+   
+    obj.style.transform = "rotateX(" + -tY + "deg) rotateY(" + tX + "deg"; 
+   }  
+   obj.style.transform = "rotateX(" + -10 + "deg) rotateY(" + tX + "deg"; 
+  } 
+  
+  function playSpin(yes) { 
+    ospin.style.animationPlayState = yes ? "running" : "paused"; 
+  } 
+  var sX, 
+    sY, 
+    nX, 
+    nY, 
+    desX = 0, 
+    desY = 0, 
+    tX = 0, 
+    tY = 10; 
+  var transformStatus = 'true'; 
+  if (autoRotate) { 
+    var animationName = rotateSpeed > 0 ? "spin" : "spinRevert"; 
+    ospin.style.animation = `${animationName} ${Math.abs( 
+      rotateSpeed 
+    )}s infinite linear`; 
+  } 
+  document.onpointerdown = function (e) { 
+    clearInterval(odrag.timer); 
+    playSpin(false)
+    console.log('down')
+    e = e || window.Event; 
+    var sX = e.clientX, 
+      sY = e.clientY; 
+      transformStatus = 'true'; 
+    this.onpointermove = function (e) { 
+      console.log('move', transformStatus)
+      if (transformStatus == 'true') { 
+        e = e || window.Event; 
+        var nX = e.clientX, 
+          nY = e.clientY; 
+        desX = nX - sX; 
+        desY = nY - sY; 
+        tX += desX * 0.5; 
+        tY += desY * 0.5; 
+        applyTransform(odrag, transformStatus); 
+        sX = nX; 
+        sY = nY; 
+      } 
+    }; 
+    this.onpointerup = function (e) { 
+    playSpin(true)
+      transformStatus = 'false'; 
+
+      desX = 0, 
+      desY = 0, 
+      
+      tY = 10; 
+      applyTransform(odrag, transformStatus); 
+      odrag.style.transform = "rotateX(" + -tY + "deg) rotateY(" + tX + "deg"; 
+      odrag.style.transition = "ease .5s"
+      this.opointermove = this.opointerup = null; 
+      
+    }; 
+    return false; 
+  }; 
+
+        document.onmousewheel = function (e) {
+          e = e || window.Event;
+          var d = e.wheelDelta / 20 || -e.detail;
+          radius += d;
+          init(1);
+        };
+
+        // Функция для изменения радиуса в зависимости от ширины окна
+        function changeRadius() {
+          // Получаем текущую ширину окна браузера
+          var windowWidth = window.innerWidth;
+
+        // Вычисляем новый радиус в зависимости от ширины окна
+        if (windowWidth < 420) {
+            radius = 130; // Устанавливаем радиус 150 для очень маленького окна
+        } else if (windowWidth < 545) {
+            radius = 170; // Устанавливаем радиус 170 для маленького окна
+        } else if (windowWidth < 810) {
+            radius = 210; // Устанавливаем радиус 210 для среднего размера окна
+        } else {
+            radius = 240; // Устанавливаем радиус 240 для большого окна
+        }
+
+          // Вызываем функцию инициализации с новым значением радиуса
+          init();
+        }
+
+        // Вызываем функцию при загрузке страницы и при изменении размера окна
+        window.onload = function () {
+          init();
+          changeRadius(); // Вызываем один раз при загрузке страницы, чтобы установить начальный радиус
+        };
+        window.onresize = changeRadius;
+
+      document.addEventListener("DOMContentLoaded", function () {
+        var burger = document.querySelector(".header__burger");
+        var menu = document.querySelector(".header__menu");
+        var body = document.querySelector("body");
+
+        burger.addEventListener("click", function (event) {
+          burger.classList.toggle("active");
+          menu.classList.toggle("active");
+          body.classList.toggle("lock");
+        });
+
+        // Добавляем обработчик события "click" на body для закрытия меню
+        body.addEventListener("click", function (event) {
+          if (
+            !event.target.closest(".header__burger") &&
+            !event.target.closest(".header__menu")
+          ) {
+            burger.classList.remove("active");
+            menu.classList.remove("active");
+            body.classList.remove("lock");
+          }
+        });
+      });
+      </script>
+  </body>
+</html>

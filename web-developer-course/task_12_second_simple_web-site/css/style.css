@@ -1,0 +1,146 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "BlowholeBBRegular";
+  src: url("../fonts/@font-face/47f82fcf387edf029b3d75b1eaff7708.ttf") format("truetype");
+  /*  Путь к файлу со шрифтом через ".". IE9 Compat Modes */
+  font-weight: bold;
+  font-style: normal;
+}
+
+html body {
+  background-color: #5b4a02;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100%;
+}
+
+p {
+  font-size: 20px;
+}
+
+@media (min-width: 767px) {
+  p {
+    font-size: 25px;
+  }
+}
+
+.holder {
+  background-color: #7d6100;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+@media (min-width: 767px) {
+  .holder {
+    font-size: 25px;
+  }
+}
+
+.holder .logo {
+  color: white;
+}
+
+.holder .logo:hover {
+  color: black;
+}
+
+.holder {
+  background-color: #7d6100;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.holder .navbar-collapse .navbar-nav .nav-item .nav-link {
+  font-family: "BlowholeBBRegular";
+  color: white;
+  font-size: 19px;
+  padding: 0;
+}
+
+.holder .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+  color: black;
+}
+
+@media (min-width: 767px) {
+  .holder .navbar-collapse .navbar-nav .nav-item .nav-link {
+    font-size: 25px;
+  }
+}
+
+.intro {
+  background-color: white;
+}
+
+.intro h1 {
+  font-family: "BlowholeBBRegular";
+  font-size: 35px;
+  color: #684430;
+}
+
+.intro .dashed {
+  border-bottom: 2px dashed black;
+}
+
+.intro .intro-col {
+  background-color: #7d6100;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: white;
+  min-width: 100%;
+  min-height: 250px;
+}
+
+@media (min-width: 767px) {
+  .intro .intro-col {
+    min-width: 100%;
+  }
+}
+
+.intro h2 {
+  font-family: "BlowholeBBRegular";
+  font-size: 30px;
+  color: #684430;
+}
+
+.intro .container .pressbutton .tin-tack {
+  font-family: "BlowholeBBRegular";
+  font-size: 20px;
+  background-color: #7d6100;
+  color: white;
+}
+
+@media (min-width: 767px) {
+  .intro .container .pressbutton .tin-tack .tin-tack {
+    font-size: 25px;
+  }
+}
+
+.container .pressbutton .tin-tack:hover {
+  color: black;
+  background-color: #5b4a02;
+}
+
+.pressbutton .tin-tack:focus {
+  color: white;
+  background-color: #7d6100;
+}
+
+.container .tab-style .pressbutton .active {
+  color: black;
+  background-color: #5b4a02;
+  border: 1px solid black;
+}
+
+.container .pressbutton .tin-tack .active {
+  color: black;
+  background-color: #5b4a02;
+  border: 1px solid black;
+}

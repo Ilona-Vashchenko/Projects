@@ -1,0 +1,35 @@
+html {
+  scroll-behavior: smooth;
+}
+
+html body {
+  height: 100%;
+}
+
+body {
+  font-family: "Roboto Slab", serif;
+}
+
+.wrapper {
+  min-height: 100%;
+}
+
+.backgraund {
+  background-image: url("./src/img/backgraund0.jpg");
+  background-size: contain;
+  min-width: 100%;
+  min-height: 100%;
+  width: 300px;
+  height: 200px;
+  background-color: rgb(189, 7, 7);
+}
+
+.container {
+  max-width: 1260px;
+  margin: 0 auto;
+  position: relative;
+}
+
+h1 {
+  color: white;
+}

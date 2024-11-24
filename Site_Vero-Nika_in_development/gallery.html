@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/res.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Maternity Pregnancy Photographer LONDON</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <section class="container">
+        <header class="header">
+          <div class="container framework">
+            <div class="header__body">
+              <a class="header__logo" href="#"
+                ><img class="baw" src="./src/img/logo/logo3.png" alt="logo"
+              /></a>
+            </div>
+            <div class="header__burger">
+              <span></span>
+            </div>
+            <nav class="header__menu">
+              <ul class="header__list">
+                <li>
+                  <a href="./index.html" class="header__link">About me</a>
+                </li>
+                <li>
+                  <a href="#" class="header__link">Free wardrobe</a>
+                </li>
+                <li>
+                  <a href="./gallery.html" class="header__link">Gallery</a>
+                </li>
+                <li>
+                  <a href="#" class="header__link">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+
+            <!--<div class="header__social">
+              <a class="header__btn btn btn--red">Book Now</a>-->
+            <div class="header__social" id="fake-masonry">
+              <a class="header__icon" href="#"
+                ><img src="./src/img/facebook.png" alt="facebook"
+              /></a>
+              <a class="header__icon" href="#"
+                ><img src="./src/img/instagram.png" alt="instagram"
+              /></a>
+            </div>
+          </div>
+        </header>
+        <main>
+          <div class="container">
+            <div class="grayscala exampl">
+              <a class="" href="#"
+                ><img src="./src/img/logo/logo.png" alt="logo"
+              /></a>
+              <a class="" href="#"
+                ><img src="./src/img/logo/logo.png" alt="logo"
+              /></a>
+              <a class="" href="#"
+                ><img src="./src/img/logo/logo.png" alt="logo"
+              /></a>
+              <a class="" href="#"
+                ><img src="./src/img/logo/logo.png" alt="logo"
+              /></a>
+            </div>
+            <div class="gallery">
+              <img
+                class="gallery-img"
+                src="./src/img/gallery/IMG_1227.jpeg"
+                alt=""
+              />
+              <img
+                class="gallery-img"
+                src="./src/img/gallery/IMG_1466.jpeg"
+                alt=""
+              />
+              <img
+                class="gallery-img"
+                src="./src/img/gallery/IMG_1471.jpeg"
+                alt=""
+              />
+              <img
+                class="gallery-img"
+                src="./src/img/gallery/IMG_1530.jpeg"
+                alt=""
+              />
+              <img
+                class="gallery-img"
+                src="./src/img/gallery/IMG_1763.jpeg"
+                alt=""
+              />
+              <img
+                class="gallery-img"
+                src="./src/img/gallery/IMG_1871.jpeg"
+                alt=""
+              />
+              <img
+                class="gallery-img"
+                src="./src/img/gallery/IMG_1878.jpeg"
+                alt=""
+              />
+              <img
+                class="gallery-img"
+                src="./src/img/gallery/IMG_2194.jpeg"
+                alt=""
+              />
+              <img
+                class="gallery-img"
+                src="./src/img/gallery/IMG_2388.jpeg"
+                alt=""
+              />
+              <img
+                class="gallery-img"
+                src="./src/img/gallery/IMG_2408.jpeg"
+                alt=""
+              />
+              <img
+                class="gallery-img"
+                src="./src/img/gallery/IMG_2487.jpeg"
+                alt=""
+              />
+              <img
+                class="gallery-img"
+                src="./src/img/gallery/IMG_2739.jpeg"
+                alt=""
+              />
+              <img
+                class="gallery-img"
+                src="./src/img/gallery/IMG_5395.jpeg"
+                alt=""
+              />
+              <img
+                class="gallery-img"
+                src="./src/img/gallery/IMG_3191 2.jpeg"
+                alt=""
+              />
+              <img
+                class="gallery-img"
+                src="./src/img/gallery/IMG_4820.jpeg"
+                alt=""
+              />
+              <img
+                class="gallery-img"
+                src="./src/img/gallery/IMG_5333.jpeg"
+                alt=""
+              />
+            </div>
+
+            <div class="modal">
+              <span class="close">&times;</span>
+              <div class="modal-content">
+                <img class="modal-img" src="" alt="" />
+                <span class="prev">&#10094;</span>
+                <span class="next">&#10095;</span>
+              </div>
+            </div>
+          </div>
+        </main>
+        <footer>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia id
+            reiciendis aliquid, atque ipsum odio corporis iure enim eveniet
+            voluptatum, nesciunt totam, adipisci labore ad beatae omnis
+            praesentium. Aliquam, eaque.
+          </p>
+        </footer>
+      </section>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./src/js/script.js"></script>
+    <script src="./src/js/gallery.js"></script>
+    <script>
+      // Находим все элементы с классом 'baw'
+      const imgElements = document.querySelectorAll(".baw");
+
+      // Добавляем обработчики событий для каждого изображения
+      imgElements.forEach(function (imgElement) {
+        imgElement.addEventListener("mouseenter", function () {
+          imgElement.src = "./src/img/logo/logo2.png"; // Меняем изображение при наведении
+        });
+
+        imgElement.addEventListener("mouseleave", function () {
+          imgElement.src = "./src/img/logo/logo3.png"; // Возвращаем исходное изображение при уходе с наведения
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/res.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
+    rel="stylesheet"
+  />
+  <title>@@The Wynd Cafe and Bistro</title>
+</head>
+
+  <body>
+    <div class="wrapper">
+      <header>
+  <div class="container">
+    <div class="container__backgraund">
+      <div class="container__opacity post1">
+        <div class="container__content">
+          <h2>Post Title 1</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+            pariatur iste rem sequi error consequatur.
+          </p>
+        </div>
+      </div>
+      <div class="container__opacity post2">
+        <div class="container__content">
+          <h2>Post Title 2</h2>
+          <p>
+            Totam illum voluptate consectetur atque odit expedita officia
+            consequuntur ipsam provident, corporis cupiditate. Voluptas,
+            explicabo.
+          </p>
+        </div>
+      </div>
+      <div class="container__opacity post3">
+        <div class="container__content">
+          <h2>Post Title 3</h2>
+          <p>
+            Sed ratione repellat voluptatem hic quibusdam, magni exercitationem
+            laudantium totam nihil harum aspernatur in amet?
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="header">
+      <div class="header__framework">
+        <div id="space" class="header__body">
+          <div class="header__burger">
+            <span></span>
+          </div>
+          <nav class="header__menu">
+            <ul class="header__list">
+              <li>
+                <a class="header__link" href="index.html">HOME</a>
+              </li>
+              <li>
+                <a class="header__link" href="menu.html">MENU</a>
+              </li>
+              <li>
+                <a class="header__link" href="gallery.html">GALLERY</a>
+              </li>
+              <li>
+                <a class="header__link" href="social.html">SOCIAL</a>
+              </li>
+              <li>
+                <a class="header__link" href="contacts.html">CONTACT</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="booking">
+            <div class="booking__opacity">
+              <a class="booking__link" href="booking.html">BOOK A TABLE </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <main>
+        <div class="menu">
+          <div class="menu__row">
+            <div class="menu__column">
+              <p>
+                <a href="./files/Main-Menu-Front.pdf" download> CAFE MENU 1</a>
+                </p>
+              <picture>
+                <img
+                  id="zoomImg-1"
+                  src="./img/menu/MainMenuFront.jpg"
+                  alt=""
+                  onclick="zoomIn('zoomImg-1'); openModal('./img/menu/MainMenuFront.jpg')"
+              /></picture>
+            </div>
+            <div>
+              <p>
+                <a href="./files/Main-Menu-Back.pdf" download> CAFE MENU 2 </a>
+              </p>
+              <picture>
+                <img
+                  id="zoomImg-2"
+                  src="./img/menu/MainMenuBack.jpg"
+                  alt=""
+                  onclick="zoomIn('zoomImg-2'); openModal('./img/menu/MainMenuBack.jpg')"
+              /></picture>
+            </div>
+            <div>
+              <p>
+                <a href="./files/Grill-Menu.pdf" download> CHARCOAL GRILL </a>
+              </p>
+              <picture>
+                <img
+                  id="zoomImg-3"
+                  src="./img/menu/GrillMenu.jpg"
+                  alt=""
+                  onclick="zoomIn('zoomImg-3'); openModal('./img/menu/GrillMenu.jpg')"
+              /></picture>
+            </div>
+            <div>
+              <p>
+                <a href="./files/Drinks-Menu.pdf" download> DRINKS </a></p>
+              <picture>
+                <img
+                  id="zoomImg-4"
+                  src="./img/menu/DrinksMenu.jpg"
+                  alt=""
+                  onclick="zoomIn('zoomImg-4'); openModal('./img/menu/DrinksMenu.jpg')"
+              /></picture>
+            </div>
+            <div>
+              <p>
+                <a href="./files/Cocktails-Menu.pdf" download> COCKTAILS </a></p>
+                </p>
+              <picture>
+                <img
+                  id="zoomImg-5"
+                  src="./img/menu/CocktailsMenu.jpg"
+                  alt=""
+                  onclick="zoomIn('zoomImg-5'); openModal('./img/menu/CocktailsMenu.jpg')"
+                /></picture>
+            </div>
+            <div>
+              <p>OUR SPECIAL OFFERS!</p>
+              <p>
+                FREE SOFT DRINK, LAGER OR SIDER WITH
+                <br />ANY GRILL ORDER <br /><br />COCKTAILS 2 FOR £10 (MON - THU)
+                <br /><br />20% - STUDENT DISCOUNT
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer></footer>
+    </div>
+
+
+<!-- Первый блок модального окна -->
+<div id="modal-container" class="modal-container">
+  <div class="modal-content">
+    <div class="image-container">
+      <img id="modal-img" class="modal-img" src="" alt="image not found">
+      <div class="close-modal" onclick="closeModal()">&#10006;</div>
+    </div>
+  </div>
+</div>
+  <!--<script src="./js/menu.js">
+  </script>-->
+  <script>
+        function zoomIn(imgSrc) {
+    var modalImg = document.getElementById("modal-img");
+    modalImg.src = imgSrc;
+    document.getElementById("modal-container").style.display = "block";
+    document.body.classList.add("modal-open");
+  }
+
+
+  function openModal(imageSrc) {
+    var modal = document.getElementById("modal-container");
+    var modalImg = document.getElementById("modal-img");
+    modal.style.display = "block";
+    modalImg.src = imageSrc;
+    document.body.classList.add("modal-open"); // Добавляем класс для блокировки прокрутки страницы
+    updateCloseButtonPosition(); // Меняем позицию крестика относительно адаптированной картинки
+  }
+
+  function closeModal() {
+    var modal = document.getElementById("modal-container");
+    modal.style.display = "none";
+    document.body.classList.remove("modal-open"); // Удаляем класс для разблокировки прокрутки страницы
+  }
+  
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    var burger = document.querySelector(".header__burger");
+    var menu = document.querySelector(".header__menu");
+    var body = document.querySelector("body");
+
+    burger.addEventListener("click", function (event) {
+      burger.classList.toggle("active");
+      menu.classList.toggle("active");
+      body.classList.toggle("lock");
+    });
+
+    body.addEventListener("click", function (event) {
+      if (
+        !event.target.closest(".header__burger") &&
+        !event.target.closest(".header__menu")
+      ) {
+        burger.classList.remove("active");
+        menu.classList.remove("active");
+        body.classList.remove("lock");
+      }
+    });
+  });
+
+
+    function updateCloseButtonPosition() {
+    var img = document.getElementById('modal-img');
+    var btn = document.querySelector('.close-modal');
+
+    if (img && btn) {
+      // Позиционируем крестик в правом верхнем углу изображения
+      btn.style.top = `${img.offsetTop}px`; // Y-координата верхнего края картинки
+      btn.style.left = `${img.offsetLeft + img.clientWidth - btn.offsetWidth}px`; // X-координата левого края картинки плюс её ширина минус ширина крестика
+    }
+  }
+
+    // Вызываем функцию при изменении размеров окна и после полной загрузки изображения
+    window.addEventListener('resize', updateCloseButtonPosition);
+    window.addEventListener('load', updateCloseButtonPosition);
+  </script>
+  </body>
+</html>

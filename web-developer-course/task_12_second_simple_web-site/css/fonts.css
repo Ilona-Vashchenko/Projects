@@ -1,0 +1,8 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "BlowholeBBRegular";
+  src: url("../fonts/@font-face/47f82fcf387edf029b3d75b1eaff7708.ttf") format("truetype");
+  /*  Путь к файлу со шрифтом через ".". IE9 Compat Modes */
+  font-weight: bold;
+  font-style: normal;
+}

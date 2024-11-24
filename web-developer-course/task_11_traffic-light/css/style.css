@@ -1,0 +1,388 @@
+html {
+  min-height: 100%;
+}
+
+body {
+  max-width: 1200px;
+  height: 100%;
+  background-color: #f79625;
+}
+
+#wrapper {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.traffic-light {
+  width: calc(100% - 40px);
+  position: relative;
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.traffic-light__object {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
+  height: 470px;
+  border: 3px solid black;
+  border-radius: 7%;
+  background-color: black;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.traffic-light__object__red {
+  width: 115px;
+  height: 115px;
+  border: 10px solid #181717;
+  border-radius: 50%;
+  background-color: black;
+  -webkit-animation-name: example1;
+          animation-name: example1;
+  -webkit-animation-duration: 14s;
+          animation-duration: 14s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes example1 {
+  0% {
+    background-color: red;
+  }
+  8% {
+    background-color: red;
+  }
+  16% {
+    background-color: black;
+  }
+  24% {
+    background-color: black;
+  }
+  32% {
+    background-color: black;
+  }
+  40% {
+    background-color: black;
+  }
+  48% {
+    background-color: black;
+  }
+  56% {
+    background-color: black;
+  }
+  64% {
+    background-color: black;
+  }
+  72% {
+    background-color: black;
+  }
+  80% {
+    background-color: black;
+  }
+  100% {
+    background-color: black;
+  }
+}
+
+@keyframes example1 {
+  0% {
+    background-color: red;
+  }
+  8% {
+    background-color: red;
+  }
+  16% {
+    background-color: black;
+  }
+  24% {
+    background-color: black;
+  }
+  32% {
+    background-color: black;
+  }
+  40% {
+    background-color: black;
+  }
+  48% {
+    background-color: black;
+  }
+  56% {
+    background-color: black;
+  }
+  64% {
+    background-color: black;
+  }
+  72% {
+    background-color: black;
+  }
+  80% {
+    background-color: black;
+  }
+  100% {
+    background-color: black;
+  }
+}
+
+.traffic-light__object__yellow {
+  width: 115px;
+  height: 115px;
+  border: 10px solid #181717;
+  border-radius: 50%;
+  background-color: black;
+  -webkit-animation-name: example2;
+          animation-name: example2;
+  -webkit-animation-duration: 14s;
+          animation-duration: 14s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes example2 {
+  0% {
+    background-color: black;
+  }
+  6% {
+    background-color: black;
+  }
+  12% {
+    background-color: black;
+  }
+  24% {
+    background-color: black;
+  }
+  30% {
+    background-color: #f9fd03;
+  }
+  36% {
+    background-color: black;
+  }
+  42% {
+    background-color: #f9fd03;
+  }
+  48% {
+    background-color: black;
+  }
+  54% {
+    background-color: #f9fd03;
+  }
+  60% {
+    background-color: black;
+  }
+  66% {
+    background-color: #f9fd03;
+  }
+  72% {
+    background-color: black;
+  }
+  78% {
+    background-color: black;
+  }
+  84% {
+    background-color: black;
+  }
+  90% {
+    background-color: black;
+  }
+  100% {
+    background-color: black;
+  }
+}
+
+@keyframes example2 {
+  0% {
+    background-color: black;
+  }
+  6% {
+    background-color: black;
+  }
+  12% {
+    background-color: black;
+  }
+  24% {
+    background-color: black;
+  }
+  30% {
+    background-color: #f9fd03;
+  }
+  36% {
+    background-color: black;
+  }
+  42% {
+    background-color: #f9fd03;
+  }
+  48% {
+    background-color: black;
+  }
+  54% {
+    background-color: #f9fd03;
+  }
+  60% {
+    background-color: black;
+  }
+  66% {
+    background-color: #f9fd03;
+  }
+  72% {
+    background-color: black;
+  }
+  78% {
+    background-color: black;
+  }
+  84% {
+    background-color: black;
+  }
+  90% {
+    background-color: black;
+  }
+  100% {
+    background-color: black;
+  }
+}
+
+.traffic-light__object__green {
+  width: 115px;
+  height: 115px;
+  border: 10px solid #181717;
+  border-radius: 50%;
+  background-color: black;
+  -webkit-animation-name: example3;
+          animation-name: example3;
+  -webkit-animation-duration: 14s;
+          animation-duration: 14s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes example3 {
+  0% {
+    background-color: black;
+  }
+  8% {
+    background-color: black;
+  }
+  16% {
+    background-color: black;
+  }
+  24% {
+    background-color: black;
+  }
+  32% {
+    background-color: black;
+  }
+  40% {
+    background-color: black;
+  }
+  48% {
+    background-color: black;
+  }
+  56% {
+    background-color: black;
+  }
+  64% {
+    background-color: black;
+  }
+  72% {
+    background-color: black;
+  }
+  80% {
+    background-color: black;
+  }
+  88% {
+    background-color: #85cd00;
+  }
+  100% {
+    background-color: #85cd00;
+  }
+}
+
+@keyframes example3 {
+  0% {
+    background-color: black;
+  }
+  8% {
+    background-color: black;
+  }
+  16% {
+    background-color: black;
+  }
+  24% {
+    background-color: black;
+  }
+  32% {
+    background-color: black;
+  }
+  40% {
+    background-color: black;
+  }
+  48% {
+    background-color: black;
+  }
+  56% {
+    background-color: black;
+  }
+  64% {
+    background-color: black;
+  }
+  72% {
+    background-color: black;
+  }
+  80% {
+    background-color: black;
+  }
+  88% {
+    background-color: #85cd00;
+  }
+  100% {
+    background-color: #85cd00;
+  }
+}
+
+.traffic-light .pillar {
+  width: 40px;
+  height: 100px;
+  background-color: black;
+}

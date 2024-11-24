@@ -1,0 +1,147 @@
+@import "fonts.scss";
+
+$background-color-dark: #5b4a02;
+$background-color-bride: #7d6100;
+$background-color-ginger: #77631c;
+$color-white: white;
+$color-ginger: #686430;
+$color-black: black;
+$font-family-Arial: Arial, Helvetica, sans-serif;
+$font-family-BlowholeBBRegular: "BlowholeBBRegular";
+$font-size-20: 20px;
+$font-size-25: 25px;
+$dashed-border-bottom: 2px dashed black;
+
+@mixin base {
+  background-color: $background-color-bride;
+  font-family: $font-family-Arial;
+  font-size: $font-size-20;
+}
+
+html body {
+  background-color: $background-color-dark;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+p {
+  font-size: $font-size-20;
+
+  @media (min-width: 767px) {
+    font-size: $font-size-25;
+  }
+}
+
+.holder {
+  @include base;
+
+  @media (min-width: 767px) {
+    font-size: $font-size-25;
+  }
+
+  .logo {
+    color: $color-white;
+  }
+
+  .logo:hover {
+    color: $color-black;
+  }
+}
+
+.holder {
+  @include base;
+
+  .navbar-collapse .navbar-nav .nav-item .nav-link {
+    font-family: $font-family-BlowholeBBRegular;
+    color: $color-white;
+    font-size: 19px;
+    padding: 0;
+  }
+
+  .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+    color: $color-black ;
+  }
+
+  @media (min-width: 767px) {
+    .navbar-collapse .navbar-nav .nav-item .nav-link {
+      font-size: $font-size-25;
+    }
+  }
+}
+
+.intro {
+  background-color: white;
+
+  h1 {
+    font-family: $font-family-BlowholeBBRegular;
+    font-size: 35px;
+    color: #684430;
+  }
+
+  .dashed {
+    border-bottom: $dashed-border-bottom;
+  }
+
+  .intro-col {
+    @include base;
+
+    color: $color-white;
+    min-width: 100%;
+    min-height: 250px;
+  }
+
+  @media (min-width: 767px) {
+    .intro-col {
+      min-width: 100%;
+    }
+  }
+
+  h2 {
+    font-family: $font-family-BlowholeBBRegular;
+    font-size: 30px;
+    color: #684430;
+  }
+
+  .container {
+    .pressbutton {
+      .tin-tack {
+        font-family: $font-family-BlowholeBBRegular;
+        font-size: $font-size-20;
+        background-color: $background-color-bride;
+        color: $color-white;
+
+        @media (min-width: 767px) {
+          .tin-tack {
+            font-size: $font-size-25;
+          }
+        }
+      }
+    }
+  }
+}
+
+.container .pressbutton .tin-tack:hover {
+  color: $color-black;
+  background-color: $background-color-dark;
+}
+
+.pressbutton .tin-tack:focus {
+  color: $color-white;
+  background-color: $background-color-bride;
+}
+
+.container .tab-style .pressbutton .active {
+  color: $color-black;
+  background-color: $background-color-dark;
+  border: 1px solid black;
+}
+
+.container .pressbutton .tin-tack .active {
+  color: $color-black;
+  background-color: $background-color-dark;
+  border: 1px solid black;
+}
