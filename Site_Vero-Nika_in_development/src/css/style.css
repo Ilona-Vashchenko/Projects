@@ -516,7 +516,6 @@ color: white;
 
 .myself__foto{
   width: calc(100% - 1.5rem);
-  filter: grayscale(100%);
   border-radius: 5px;
   transition: all .25s ease-in-out;
   max-width: 320px;
@@ -527,6 +526,13 @@ color: white;
   height: 100%;
   object-fit: cover;
   max-width: 320px;
+  filter: grayscale(100%);
+  border-radius: 5px;
+  transition: all .25s ease-in-out;
+}
+
+.myself__foto:hover img {
+  filter: grayscale(0);
 }
 
 .myself__tale{
