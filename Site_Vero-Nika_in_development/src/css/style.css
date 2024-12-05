@@ -547,13 +547,16 @@ color: white;
     /* Также скрываем текст в начале */
   animation-fill-mode: forwards;
   padding: 10px;
+  max-width: 100%;
+    /* Ограничиваем максимальную ширину */
+  word-wrap: break-word;
 }
 
 
 @keyframes slidein {
   0% {
     margin-left: 100%;
-    width: 300%;
+    width: 200%;
     opacity: 0;
     visibility: hidden;
   }
