@@ -1659,7 +1659,7 @@ iframe {
 
 @media only screen and (min-width: 501px) and (max-width: 767px) {
   .gallery {
-    -ms-grid-columns: (1fr)[2];
+    -ms-grid-columns: 1fr 1fr;
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -1769,7 +1769,7 @@ iframe {
 
 @media only screen and (max-width: 500px) {
   .gallery {
-    -ms-grid-columns: (1fr)[1];
+    -ms-grid-columns: 1fr;
     grid-template-columns: repeat(1, 1fr);
   }
 
