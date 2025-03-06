@@ -1,0 +1,60 @@
+/* Стили для всех изображений с классом content__slider */
+.content__slider {
+  width: 100%;
+  /* или другая ширина по твоим правилам */
+  height: auto;
+  /* Автоматическая высота для сохранения пропорций */
+  object-fit: cover;
+}
+
+.fake-masonry2 {
+  --gap: clamp(1rem, 5vmin, 2rem);
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-gap: var(--gap);
+  -moz-column-gap: var(--gap);
+  column-gap: var(--gap);
+  max-width: 1200px;
+  width: 96%;
+  margin: 2rem auto;
+  z-index: 2;
+  position: relative;
+  -webkit-animation: 120s slide infinite linear;
+  animation: 120s slide infinite linear;
+  display: inline-block;
+}  
+
+.content__foto2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 10px 1fr 10px 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* 3 колонки */
+  grid-gap: 10px;
+  /* Отступы между элементами */
+  grid-auto-rows: minmax(200px, auto);
+  /* Устанавливаем минимальную высоту строк */
+  white-space: nowrap;
+  -webkit-animation: 30s slide infinite linear;
+  animation: 30s slide infinite linear;
+  /* Убираем выравнивание по центру */
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  /* Выровнять элементы по центру */
+  justify-items: stretch;
+  /* Элементы растягиваются по ширине */
+}
+
+.content__foto2:hover.content__slide {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+.skin {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 10px;
+  text-align: center;
+}
