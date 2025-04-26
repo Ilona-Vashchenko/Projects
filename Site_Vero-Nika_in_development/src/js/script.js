@@ -1,5 +1,19 @@
+window.addEventListener('load', function () {
+  console.log("Page fully loaded");
 
-document.addEventListener('DOMContentLoaded', function () {
+  console.log("jQuery is loaded:", typeof jQuery); // Проверка загрузки jQuery
+  jQuery(document).ready(function () {
+    console.log("Document is ready");
+    jQuery('.header__burger').click(function (event) {
+      console.log("Burger clicked");
+      jQuery('.header__burger, .burger__menu').toggleClass('active');
+      jQuery('body').toggleClass('lock');
+    });
+  });
+});
+
+
+/*document.addEventListener('DOMContentLoaded', function () {
   // Получаем контейнер, где будут размещены фотографии
   const containers = document.querySelectorAll('.content__foto');
 
@@ -34,16 +48,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-console.log("jQuery is loaded:", typeof jQuery); // Проверка загрузки jQuery
-jQuery(document).ready(function () {
-  console.log("Document is ready");
-  jQuery('.header__burger').click(function (event) {
-    console.log("Burger clicked");
-    jQuery('.header__burger, .burger__menu').toggleClass('active');
-    jQuery('body').toggleClass('lock');
-  });
-});
-
 
 
 
@@ -71,7 +75,7 @@ jQuery(document).ready(function () {
 
 
 
-// Получаем контейнер и все изображения
+/*// Получаем контейнер и все изображения
 const container = document.querySelector('.fake-masonry');
 const images = document.querySelectorAll('.content__slider');
 
@@ -176,4 +180,4 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Наблюдаем за всеми изображениями
   images.forEach(image => observer.observe(image)); // Отслеживаем каждое изображение
-});
+});*/

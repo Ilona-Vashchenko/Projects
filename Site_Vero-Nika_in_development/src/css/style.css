@@ -35,7 +35,6 @@ body {
 .container {
   max-width: 1180px;
   margin: 0 auto;
-  padding: 0 10px;
   text-align: center;
 }
 
@@ -285,6 +284,7 @@ h2 {
 .cover {
   overflow: hidden;
   height: 100vh;
+  position: relative;
 }
 
 p {
@@ -305,28 +305,27 @@ p {
 
 
 
-
+/*
 .content__foto {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 10px 1fr 10px 1fr;
   grid-template-columns: 1fr 1fr 1fr;
-  /* 3 колонки */
+ 
   grid-gap: 10px;
-  /* Отступы между элементами */
+  
   grid-auto-rows: minmax(200px, auto);
-  /* Устанавливаем минимальную высоту строк */
+  
   white-space: nowrap;
   -webkit-animation: 30s slide infinite linear;
   animation: 30s slide infinite linear;
-  /* Убираем выравнивание по центру */
+  
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  /* Выровнять элементы по центру */
+ 
   justify-items: stretch;
-  /* Элементы растягиваются по ширине */
-}
+}*/
 
 
 
@@ -339,15 +338,16 @@ p {
   padding: 20px;
 }*/
 
-.content__slide {
+
+
+.content__slider {
+  margin-bottom: 20px;
   width: 100%;
   height: auto;
   -o-object-fit: cover;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 5px;
 }
-
-
 
 /*.content__foto{
   display: grid;
@@ -358,22 +358,14 @@ p {
   white-space: nowrap;
   animation: 60s slide infinite linear;
 }*/
-
+/*
 .content__foto:hover.content__slide {
   -webkit-animation-play-state: paused;
   animation-play-state: paused;
 }
 
-.content__slide {
-  height: auto;
-  padding: 5px 12px;
-  -o-object-fit: cover;
-  object-fit: cover;
-  /* Изображение заполняет ячейку, обрезая лишнее */
-  border-radius: 5px;
 
-}
-
+/*
 @-webkit-keyframes slide {
   from {
     -webkit-transform: translateY(0);
@@ -384,8 +376,8 @@ p {
     -webkit-transform: translateY(-65%);
     transform: translateY(-65%);
   }
-}
-
+}*/
+/*
 @keyframes slide {
   from {
     -webkit-transform: translateY(0);
@@ -396,10 +388,10 @@ p {
     -webkit-transform: translateY(-65%);
     transform: translateY(-65%);
   }
-}
+}*/
 
 
-
+/*
 .fake-masonry {
   --gap: clamp(1rem, 5vmin, 2rem);
   -webkit-column-count: 3;
@@ -416,16 +408,31 @@ p {
   -webkit-animation: 120s slide infinite linear;
   animation: 120s slide infinite linear;
   display: inline-block;
+}*/
+
+.masonry-container {
+  column-count: 3;
+  max-width: 100%;
+  margin: 20px;
+  padding-top: 80px;
+  padding-bottom: 50px;
+  z-index: 1;
 }
 
+.container.content__text {
+  min-height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
 
-
-.content__slider {
+/*.content__slider {
   -webkit-column-break-inside: avoid;
   -moz-column-break-inside: avoid;
   break-inside: avoid;
   margin-bottom: var(--gap);
-}
+}*/
 
 .content__column {
   display: -webkit-box;
@@ -468,7 +475,7 @@ p {
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   overflow: hidden;
-  margin-top: 100px;
+  margin: 100px 30px 30px 30px;
 }
 
 .gallery-img {
@@ -1744,7 +1751,7 @@ iframe {
 
 
   .myself__tale2 {
-    width: calc(100% - 1.5rem);
+    width: calc(100% - 0.5rem);
     min-width: auto;
     -webkit-box-ordinal-group: 3;
     -ms-flex-order: 2;
@@ -1755,7 +1762,7 @@ iframe {
   }
 
   .myself__foto2 {
-    width: calc(100% - 1.5rem);
+    width: calc(100% - 0.5rem);
     min-width: auto;
     -webkit-box-ordinal-group: 2;
     -ms-flex-order: 1;
