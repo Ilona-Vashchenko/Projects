@@ -346,8 +346,7 @@ p {
   height: auto;
   -o-object-fit: cover;
   object-fit: cover;
-  border-radius: 5px;
-}
+  }
 
 /*.content__foto{
   display: grid;
@@ -413,8 +412,8 @@ p {
 .masonry-container {
   column-count: 3;
   max-width: 100%;
-  margin: 20px;
-  padding-top: 80px;
+  margin: 5px 20px;
+  padding-top: 60px;
   padding-bottom: 50px;
   z-index: 1;
 }

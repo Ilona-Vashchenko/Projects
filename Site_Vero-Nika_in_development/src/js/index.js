@@ -10,7 +10,7 @@ const lastImage = images[images.length - 1];
 
 // Получаем высоту прокрутки и длительность анимации
 let scrollDistance = container.scrollHeight - window.innerHeight;
-let animationDuration = 40;
+let animationDuration = 10;
 
 // Основная анимация движения вниз
 function startMainAnimation() {
